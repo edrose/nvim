@@ -10,6 +10,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'scrooloose/nerdtree'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-fugitive'
+  Plug 'chrisbra/csv.vim'
 " }
 
 call plug#end()
@@ -96,7 +97,7 @@ let mapleader="\<SPACE>"
   set list                " Show problematic characters.
 
   " Also highlight all tabs and trailing whitespace characters.
-  highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
+  hi ExtraWhitespace ctermbg=231 ctermfg=231 guibg=white guifg=white
   match ExtraWhitespace /\s\+$\|\t/
   hi SpellBad ctermfg=015 ctermbg=160
   hi SpellCap ctermfg=000 ctermbg=226
@@ -256,7 +257,7 @@ let mapleader="\<SPACE>"
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 
-  let g:airline#extensions#tabline#enabled = 2
+  let g:airline#extensions#tabline#enabled = 1
   let g:airline_theme= 'powerlineish' "}
   " CtrlP {
     " Open file menu
