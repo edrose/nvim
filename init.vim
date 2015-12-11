@@ -10,7 +10,9 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'scrooloose/nerdtree'
   Plug 'ctrlpvim/ctrlp.vim'
   Plug 'tpope/vim-fugitive'
+  Plug 'ntpeters/vim-better-whitespace'
   Plug 'chrisbra/csv.vim'
+  Plug 'Valloric/YouCompleteMe'
 " }
 
 call plug#end()
@@ -91,16 +93,15 @@ let mapleader="\<SPACE>"
 
   " Tell Vim which characters to show for expanded TABs,
   " trailing whitespace, and end-of-lines. VERY useful!
-  if &listchars ==# 'eol:$'
-    set listchars=tab:>\ ,trail:-,extends:>,precedes:<,nbsp:+
-  endif
-  set list                " Show problematic characters.
+"  if &listchars ==# 'eol:$'
+"    set listchars=tab:>\,extends:>,precedes:<,nbsp:+
+"  endif
+"  set list                " Show problematic characters.
 
-  " Also highlight all tabs and trailing whitespace characters.
-  hi ExtraWhitespace ctermbg=231 ctermfg=231 guibg=white guifg=white
-  match ExtraWhitespace /\s\+$\|\t/
+  " Set colours for error higlighting
   hi SpellBad ctermfg=015 ctermbg=160
   hi SpellCap ctermfg=000 ctermbg=226
+  hi ExtraWhitespace ctermbg=red ctermbg=red
 
 " }
 
