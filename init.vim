@@ -13,7 +13,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'ntpeters/vim-better-whitespace'
   Plug 'chrisbra/csv.vim'
   Plug 'Valloric/YouCompleteMe'
-" }
+  Plug 'fidian/hexmode'
+  " }
 
 call plug#end()
 
@@ -102,6 +103,7 @@ let mapleader="\<SPACE>"
   hi SpellBad ctermfg=015 ctermbg=160
   hi SpellCap ctermfg=000 ctermbg=226
   hi ExtraWhitespace ctermbg=red ctermbg=red
+  hi Visual ctermbg=white ctermfg=black
 
 " }
 
@@ -259,6 +261,7 @@ let mapleader="\<SPACE>"
   let g:airline_symbols.linenr = ''
 
   let g:airline#extensions#tabline#enabled = 1
+  let g:airline#extensions#tabline#show_buffers = 0
   let g:airline_theme= 'powerlineish' "}
   " CtrlP {
     " Open file menu
