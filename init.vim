@@ -14,6 +14,8 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'chrisbra/csv.vim'
   Plug 'Valloric/YouCompleteMe'
   Plug 'fidian/hexmode'
+  Plug 'benekastah/neomake'
+  Plug 'jeetsukumaran/vim-buffergator'
   " }
 
 call plug#end()
@@ -104,6 +106,11 @@ let mapleader="\<SPACE>"
   hi SpellCap ctermfg=000 ctermbg=226
   hi ExtraWhitespace ctermbg=red ctermbg=red
   hi Visual ctermbg=white ctermfg=black
+  hi Search ctermfg=black
+  if has('gui_running')
+    hi Normal guibg=#33322F guifg=#FFFFFF
+  endif
+  set background=dark
 
 " }
 
@@ -182,8 +189,8 @@ let mapleader="\<SPACE>"
 " }
 
 " GUI Options {
-  set guioptions-=m " Removes top menubar
-  set guioptions-=T " Removes top toolbar
+  "set guioptions-=m " Removes top menubar
+  "set guioptions-=T " Removes top toolbar
   set guioptions-=r " Removes right hand scroll bar
   set go-=L " Removes left hand scroll bar
 
@@ -261,7 +268,7 @@ let mapleader="\<SPACE>"
   let g:airline_symbols.linenr = ''
 
   let g:airline#extensions#tabline#enabled = 1
-  let g:airline#extensions#tabline#show_buffers = 0
+  let g:airline#extensions#tabline#show_buffers = 1
   let g:airline_theme= 'powerlineish' "}
   " CtrlP {
     " Open file menu
@@ -277,5 +284,13 @@ let mapleader="\<SPACE>"
   " YCM {
     let g:ycm_register_as_syntastic_checker=0
 " }
+
+"Remap key command to uppercase to prevent annoyance
+command WQ wq
+command Wq wq
+command W w
+command Q q
+
+let g:tex_flavor='latex'
 
 "vim:set ft=vim sw=2 ts=2:
