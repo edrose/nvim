@@ -1,11 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " Plugins {
-  " ctrl-p is a fuzzy file finder.
   Plug 'kien/ctrlp.vim'
-  " airline is a better status line and a tab-bar for nvim.
   Plug 'bling/vim-airline'
-
   Plug 'scrooloose/syntastic'
   Plug 'scrooloose/nerdtree'
   Plug 'ctrlpvim/ctrlp.vim'
@@ -292,5 +289,7 @@ command W w
 command Q q
 
 let g:tex_flavor='latex'
+
+map gw w
 
 "vim:set ft=vim sw=2 ts=2:
