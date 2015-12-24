@@ -117,7 +117,6 @@ let mapleader="\<SPACE>"
   endif
 
   set autoread            " If file updates, load automatically.
-  set autochdir           " Switch to current file's parent directory.
 
   " Remove special characters for filename
   set isfname-=:
@@ -277,6 +276,7 @@ let mapleader="\<SPACE>"
   " }
   " Syntastic {
     let g:syntastic_c_checkers=['make', 'gcc']
+    let g:syntastic_tex_checkers=['lacheck']
   " }
   " YCM {
     let g:ycm_register_as_syntastic_checker=0
