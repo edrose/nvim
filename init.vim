@@ -9,10 +9,11 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-fugitive'
   Plug 'ntpeters/vim-better-whitespace'
   Plug 'chrisbra/csv.vim'
-  Plug 'Valloric/YouCompleteMe'
   Plug 'fidian/hexmode'
   Plug 'benekastah/neomake'
   Plug 'jeetsukumaran/vim-buffergator'
+  Plug 'LaTeX-Box-Team/LaTeX-Box'
+  Plug 'Shougo/deoplete.nvim'
   " }
 
 call plug#end()
@@ -26,6 +27,7 @@ endif
 
 " Map the leader key to ,
 let mapleader="\<SPACE>"
+let maplocalleader="\\"
 
 " General {
   set backspace=indent,eol,start      " Allow backspace over everything in insert mode.
@@ -288,8 +290,14 @@ command Wq wq
 command W w
 command Q q
 
+command Latexmk !latexmk
+
 let g:tex_flavor='latex'
 
 map gw w
+
+let g:LatexBox_latexmk_async = 1
+
+let g:deoplete#enable_at_startup = 1
 
 "vim:set ft=vim sw=2 ts=2:
