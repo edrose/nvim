@@ -2,7 +2,8 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Plugins {
   Plug 'kien/ctrlp.vim'
-  Plug 'bling/vim-airline'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
   Plug 'scrooloose/syntastic'
   Plug 'scrooloose/nerdtree'
   Plug 'ctrlpvim/ctrlp.vim'
