@@ -268,7 +268,7 @@ let maplocalleader="\\"
 
   let g:airline#extensions#tabline#enabled = 1
   let g:airline#extensions#tabline#show_buffers = 1
-  let g:airline_theme= 'powerlineish' "}
+  let g:airline_theme= 'laederon' "}
   " CtrlP {
     " Open file menu
     nnoremap <Leader>o :CtrlP<CR>
