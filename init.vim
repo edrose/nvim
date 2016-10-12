@@ -35,9 +35,9 @@ let maplocalleader="\\"
   set complete-=i
   set smarttab
 
-  set noautoindent        " I indent my code myself.
-  set nocindent           " I indent my code myself.
-  "set smartindent        " Or I let the smartindent take care of it.
+  "set noautoindent        " I indent my code myself.
+  "set nocindent           " I indent my code myself.
+  set smartindent        " Or I let the smartindent take care of it.
 
   set nrformats-=octal
 
@@ -68,8 +68,8 @@ let maplocalleader="\\"
   set formatoptions+=o    " Continue comment marker in new lines.
   set textwidth=0         " Hard-wrap long lines as you type them.
   set expandtab           " Insert spaces when TAB is pressed.
-  set tabstop=2           " Render TABs using this many spaces.
-  set shiftwidth=2        " Indentation amount for < and > commands.
+  set tabstop=4           " Render TABs using this many spaces.
+  set shiftwidth=4        " Indentation amount for < and > commands.
 
   set noerrorbells        " No beeps.
   set modeline            " Enable modeline.
