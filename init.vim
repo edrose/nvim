@@ -15,6 +15,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'jeetsukumaran/vim-buffergator'
   Plug 'LaTeX-Box-Team/LaTeX-Box'
   Plug 'Shougo/deoplete.nvim'
+  Plug 'zchee/deoplete-clang'
   " }
 
 call plug#end()
