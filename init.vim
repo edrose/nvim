@@ -302,4 +302,6 @@ let g:LatexBox_latexmk_async = 1
 
 let g:deoplete#enable_at_startup = 1
 
+let g:deoplete#sources#clang#libclang_path = '/usr/lib/llvm-3.8/lib/clang.so'
+let g:deoplete#sources#clang#clang_header = '/usr/lib/clang/3.8/include'
 "vim:set ft=vim sw=2 ts=2:
